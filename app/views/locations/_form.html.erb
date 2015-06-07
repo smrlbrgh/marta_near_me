@@ -11,23 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :address %><br>
+  <div class="field form-group">
+    <%= f.label "Address or Corner" %><br>
     <%= f.text_field :address %>
   </div>
   <div class="field">
     <%= f.label :city %><br>
     <%= f.text_field :city %>
   </div>
-  <div class="field">
-    <%= f.label :latitude %><br>
-    <%= f.text_field :latitude %>
-  </div>
-  <div class="field">
-    <%= f.label :longitude %><br>
-    <%= f.text_field :longitude %>
-  </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Find My Bus!" %>
   </div>
 <% end %>
