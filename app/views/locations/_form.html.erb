@@ -15,9 +15,9 @@
     <%= f.label "Address or Corner" %><br>
     <%= f.text_field :address %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :city %><br>
-    <%= f.text_field :city %>
+    <%= f.select :city, Location::CITIES, {prompt: "Select a city"}, {class: "Form-control"} %>
   </div>
   <div class="actions">
     <%= f.submit "Find My Bus!" %>
