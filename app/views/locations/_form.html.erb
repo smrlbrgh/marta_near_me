@@ -19,7 +19,7 @@
     <%= f.label :city %><br>
     <%= f.select :city, Location::CITIES, {prompt: "Select a city"}, {class: "Form-control"} %>
   </div>
-  <div class="actions">
+  <div class="button">
     <%= f.submit "Find My Bus!" %>
   </div>
 <% end %>

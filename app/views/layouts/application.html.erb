@@ -8,10 +8,21 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <%= yield %>
 
 </body>
+  <div class="container">
+    <footer class="footer-gray">
+    <p><strong>Check in @</strong></p>
+    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-3x fa-social"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-3x fa-social"></i></a>
+    </footer>
+    <footer class="footer-black">
+    <p>All Rights Reserved <i class="fa fa-copyright"></i> <%= Time.now.year %></p>
+    </footer>
+  </div>
 </html>
